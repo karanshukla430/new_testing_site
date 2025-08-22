@@ -2,6 +2,7 @@
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const contactForm = document.getElementById("contactForm");
+const demoForm = document.getElementById("demoForm");
 const ctaPrimary = document.getElementById("cta-primary");
 
 // Mobile menu functionality
@@ -48,34 +49,60 @@ contactForm.addEventListener("submit", function (e) {
     message: formData.get("message"),
   };
 
+  // Track conversion for A/B testing
+  window.ABTest.trackConversion("contact_form_submission");
+
   // Simulate form submission (replace with actual API call)
-  submitForm(data);
+  submitForm(data, contactForm, "contact");
+});
+
+// Demo form submission
+demoForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Get form data
+  const formData = new FormData(demoForm);
+  const data = {
+    name: formData.get("demo-name"),
+    email: formData.get("demo-email"),
+    company: formData.get("company"),
+    companySize: formData.get("company-size"),
+    interest: formData.get("interest"),
+  };
+
+  // Track conversion for A/B testing
+  window.ABTest.trackConversion("demo_form_submission");
+
+  // Simulate form submission (replace with actual API call)
+  submitForm(data, demoForm, "demo");
 });
 
 // Simulate form submission
-function submitForm(data) {
+function submitForm(data, form, formType) {
   // Show loading state
-  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const submitBtn = form.querySelector('button[type="submit"]');
   const originalText = submitBtn.textContent;
-  submitBtn.textContent = "Sending...";
+  submitBtn.textContent = formType === "demo" ? "Requesting..." : "Sending...";
   submitBtn.disabled = true;
 
   // Simulate API call
   setTimeout(() => {
     // Reset form
-    contactForm.reset();
+    form.reset();
 
-    // Show success message
-    showNotification(
-      "Message sent successfully! We'll get back to you soon.",
-      "success"
-    );
+    // Show success message based on form type
+    const successMessage =
+      formType === "demo"
+        ? "Demo request submitted! We'll contact you within 24 hours to schedule."
+        : "Message sent successfully! We'll get back to you soon.";
+
+    showNotification(successMessage, "success");
 
     // Reset button
     submitBtn.textContent = originalText;
     submitBtn.disabled = false;
 
-    console.log("Form submitted:", data);
+    console.log(`${formType} form submitted:`, data);
   }, 2000);
 }
 

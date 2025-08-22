@@ -280,17 +280,91 @@ body {
 .contact > p {
   text-align: center;
   font-size: 1.2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   color: #6b7280;
 }
 
-.contact-form {
+/* Demo Form Section */
+.demo-form-section {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+}
+
+.demo-form-section h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.demo-form-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.demo-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.demo-form .form-group input,
+.demo-form .form-group select {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid transparent;
+  color: #333;
+}
+
+.demo-form .form-group input:focus,
+.demo-form .form-group select:focus {
+  background: white;
+  border-color: #60a5fa;
+}
+
+.demo-form .btn {
+  background: white;
+  color: #667eea;
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
+}
+
+.demo-form .btn:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Contact Section */
+.main-contact-section {
   max-width: 600px;
   margin: 0 auto;
   background: white;
   padding: 3rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-contact-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.contact-form {
+  text-align: left;
 }
 
 .form-group {
@@ -427,9 +501,19 @@ body {
     font-size: 2rem;
   }
 
-  .contact-form {
-    margin: 0 20px;
+  .demo-form-section,
+  .main-contact-section {
+    margin: 0 20px 4rem 20px;
     padding: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .demo-form-section h3 {
+    font-size: 1.6rem;
   }
 }
 
