@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Start VWO SmartCode -->
+    <script
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://dev.visualwebsiteoptimizer.com/lib/1120758.js"
+      id="vwoCode"
+    ></script>
+    <!-- End VWO SmartCode -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2 - TechFlow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .nav a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        transition: all 0.3s;
+      }
+
+      .nav a:hover {
+        background: #2563eb;
+        color: white;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        margin: 1rem 0;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn {
+        background: #764ba2;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 8px;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s;
+        font-weight: 500;
+      }
+
+      .btn:hover {
+        background: #5a3a7a;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 2px solid #764ba2;
+        color: #764ba2;
+      }
+
+      .btn-outline:hover {
+        background: #764ba2;
+        color: white;
+      }
+
+      .form-group {
+        margin: 20px 0;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #555;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid #e1e5e9;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #764ba2;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .stat-item {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        min-width: 120px;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+      }
+
+      .progress-bar {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        padding: 4px;
+        margin: 10px 0;
+      }
+
+      .progress-fill {
+        background: #10b981;
+        height: 20px;
+        border-radius: 8px;
+        width: 0%;
+        transition: width 0.5s ease;
+      }
+
+      .toggle-switch {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background: #ccc;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .toggle-switch.active {
+        background: #764ba2;
+      }
+
+      .toggle-switch::after {
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background: white;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        transition: left 0.3s;
+      }
+
+      .toggle-switch.active::after {
+        left: 32px;
+      }
+
+      @media (max-width: 768px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+
+        .stats {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <div>
+            <strong>TechFlow - Page 2</strong>
+          </div>
+          <div>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Page 1</a>
+            <a href="page2.html">Page 2</a>
+            <a href="spa.html">SPA Demo</a>
+          </div>
+        </nav>
+      </header>
+
+      <div class="card">
+        <h1>Test Page 2 - Survey & Feedback</h1>
+        <p>
+          This page has a different design approach with gradients and rounded
+          elements for A/B testing.
+        </p>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-number" id="surveyCount">0</span>
+          <span>Surveys</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="ratingCount">0</span>
+          <span>Ratings</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="feedbackCount">0</span>
+          <span>Feedback</span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>Quick Survey</h2>
+          <form id="surveyForm">
+            <div class="form-group">
+              <label for="satisfaction">How satisfied are you?</label>
+              <select id="satisfaction" name="satisfaction" required>
+                <option value="">Select rating</option>
+                <option value="5">Very Satisfied</option>
+                <option value="4">Satisfied</option>
+                <option value="3">Neutral</option>
+                <option value="2">Dissatisfied</option>
+                <option value="1">Very Dissatisfied</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="recommend">Would you recommend us?</label>
+              <div style="display: flex; gap: 15px; align-items: center">
+                <label
+                  ><input type="radio" name="recommend" value="yes" required />
+                  Yes</label
+                >
+                <label
+                  ><input type="radio" name="recommend" value="no" required />
+                  No</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="recommend"
+                    value="maybe"
+                    required
+                  />
+                  Maybe</label
+                >
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Submit Survey</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2>Feature Preferences</h2>
+          <div class="form-group">
+            <label>Enable notifications:</label>
+            <div
+              class="toggle-switch"
+              id="notificationToggle"
+              onclick="toggleSwitch('notifications')"
+            ></div>
+          </div>
+
+          <div class="form-group">
+            <label>Dark mode:</label>
+            <div
+              class="toggle-switch"
+              id="darkModeToggle"
+              onclick="toggleSwitch('darkMode')"
+            ></div>
+          </div>
+
+          <div class="form-group">
+            <label>Auto-save:</label>
+            <div
+              class="toggle-switch"
+              id="autoSaveToggle"
+              onclick="toggleSwitch('autoSave')"
+            ></div>
+          </div>
+
+          <button class="btn btn-outline" onclick="savePreferences()">
+            Save Preferences
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="category">Feedback Category:</label>
+            <select id="category" name="category" required>
+              <option value="">Select category</option>
+              <option value="bug">Bug Report</option>
+              <option value="feature">Feature Request</option>
+              <option value="improvement">Improvement</option>
+              <option value="general">General Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="priority">Priority Level:</label>
+            <input
+              type="range"
+              id="priority"
+              name="priority"
+              min="1"
+              max="5"
+              value="3"
+              oninput="document.getElementById('priorityValue').textContent = this.value"
+            />
+            <span>Priority: <strong id="priorityValue">3</strong>/5</span>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback">Your Feedback:</label>
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="5"
+              placeholder="Please share your thoughts..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Feedback</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Interactive Elements</h2>
+        <p>Test various interactive components:</p>
+
+        <div style="margin: 20px 0">
+          <button class="btn" onclick="showProgress()">Start Progress</button>
+          <button class="btn btn-outline" onclick="resetProgress()">
+            Reset
+          </button>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div style="margin-top: 20px">
+          <button class="btn" onclick="trackInteraction('like')">
+            👍 Like
+          </button>
+          <button class="btn" onclick="trackInteraction('share')">
+            📤 Share
+          </button>
+          <button class="btn" onclick="trackInteraction('bookmark')">
+            🔖 Bookmark
+          </button>
+          <button
+            class="btn btn-outline"
+            onclick="trackInteraction('download')"
+          >
+            ⬇️ Download
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let surveyCount = 0;
+      let ratingCount = 0;
+      let feedbackCount = 0;
+      let preferences = {
+        notifications: false,
+        darkMode: false,
+        autoSave: false,
+      };
+
+      // Form submission handlers
+      document
+        .getElementById("surveyForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          surveyCount++;
+          document.getElementById("surveyCount").textContent = surveyCount;
+          alert("Survey submitted! Thank you for your feedback.");
+          console.log("Survey data:", new FormData(this));
+
+          // Track conversion for A/B testing
+          if (window.ABTest) {
+            window.ABTest.trackConversion("page2_survey");
+          }
+
+          this.reset();
+        });
+
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          feedbackCount++;
+          document.getElementById("feedbackCount").textContent = feedbackCount;
+          alert("Feedback submitted! We appreciate your input.");
+          console.log("Feedback data:", new FormData(this));
+
+          // Track conversion for A/B testing
+          if (window.ABTest) {
+            window.ABTest.trackConversion("page2_feedback");
+          }
+
+          this.reset();
+          document.getElementById("priorityValue").textContent = "3";
+        });
+
+      // Toggle switch functionality
+      function toggleSwitch(preference) {
+        preferences[preference] = !preferences[preference];
+        const toggle = document.getElementById(preference + "Toggle");
+        toggle.classList.toggle("active");
+        console.log("Preference toggled:", preference, preferences[preference]);
+      }
+
+      // Save preferences
+      function savePreferences() {
+        alert("Preferences saved: " + JSON.stringify(preferences, null, 2));
+        console.log("Preferences saved:", preferences);
+
+        // Track conversion for A/B testing
+        if (window.ABTest) {
+          window.ABTest.trackConversion("page2_preferences");
+        }
+      }
+
+      // Progress bar functionality
+      function showProgress() {
+        const progressBar = document.getElementById("progressBar");
+        let width = 0;
+        const interval = setInterval(() => {
+          width += 10;
+          progressBar.style.width = width + "%";
+          if (width >= 100) {
+            clearInterval(interval);
+            setTimeout(() => alert("Process completed!"), 200);
+          }
+        }, 100);
+      }
+
+      function resetProgress() {
+        document.getElementById("progressBar").style.width = "0%";
+      }
+
+      // Track interactions
+      function trackInteraction(action) {
+        ratingCount++;
+        document.getElementById("ratingCount").textContent = ratingCount;
+        console.log("Interaction tracked:", action);
+        alert(`${action} action performed!`);
+
+        // Track event for A/B testing
+        if (window.ABTest) {
+          window.ABTest.trackConversion(`page2_${action}`);
+        }
+      }
+
+      // Simple A/B testing utilities (minimal version)
+      window.ABTest = {
+        trackConversion: function (event) {
+          console.log("Conversion tracked:", event);
+          // This would integrate with your actual analytics
+        },
+      };
+    </script>
+  </body>
+</html>
