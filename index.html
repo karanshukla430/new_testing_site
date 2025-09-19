@@ -2,21 +2,11 @@
 <html lang="en">
   <head>
     <!-- Start VWO SmartCode -->
-    <script>
-      // Get VWO ID from URL parameter or use default
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const vwoId = urlParams.get("id") || "1120758";
-
-      // Create VWO script element with dynamic ID
-      const vwoScript = document.createElement("script");
-      vwoScript.referrerPolicy = "no-referrer-when-downgrade";
-      vwoScript.src = `https://dev.visualwebsiteoptimizer.com/lib/${vwoId}.js`;
-      vwoScript.id = "vwoCode";
-      document.head.appendChild(vwoScript);
-
-      console.log("VWO loaded with ID:", vwoId);
-    </script>
+    <script
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://dev.visualwebsiteoptimizer.com/lib/1120758.js"
+      id="vwoCode"
+    ></script>
     <!-- End VWO SmartCode -->
 
     <meta charset="UTF-8" />
