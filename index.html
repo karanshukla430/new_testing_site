@@ -32,23 +32,7 @@
   (function blockMainThread(ms) {
     const end = Date.now() + ms;
     while (Date.now() < end) {}
-  })(2500);
-</script>
-<script>
-  // Another blocking example (computationally intensive)
-  (function blockCpu(ms) {
-    const start = Date.now();
-    let count = 0;
-    while (Date.now() - start < ms) {
-      // Some heavy computation
-      for (let i = 0; i < 10000; i++) {
-        Math.sqrt(Math.random() * Math.PI);
-      }
-      count++;
-    }
-    // Just to ensure something happens so the code doesn't get stripped
-    window.__blockMainThreadCount = count;
-  })(2400);
+  })(2000);
 </script>
    <!-- Original SmartCode -->
     <script type='text/javascript' id='vwoCode'>
